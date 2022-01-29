@@ -1,0 +1,12 @@
+import numpy as np
+import pandas as pd
+
+food_data = pd.read_excel('FoodBalanceSheets_E_Africa_NOFLAG.xlsx')
+food_data.describe()
+
+food_data.isnull().sum()
+
+df = pd.DataFrame(food_data)
+print(df)
+
+df['Area Code'].duplicated()
